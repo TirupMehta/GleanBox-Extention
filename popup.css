@@ -1,0 +1,264 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #1e1e1e;
+  color: #e0e0e0;
+  width: 500px; /* Bigger default size, bro */
+  padding: 20px;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 16px 0; /* Adds breathing room */
+  background-color: #333; /* Optional background for contrast */
+  border-bottom: 2px solid #f04e4e; /* Optional accent line */
+}
+
+/* Slightly larger and better font weight for title/logo */
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase; /* Optional for cleaner look */
+  letter-spacing: 1px; /* Adds a touch of style */
+  font-family: 'Arial', sans-serif; /* Feel free to switch to your preferred font */
+}
+
+/* Optional: Add a subtle shadow for depth */
+header h1 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Responsive tweak for smaller screens */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  header {
+    padding: 12px 0;
+  }
+}
+
+
+
+
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #2a2a2a;
+  color: #e0e0e0;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(41, 128, 185, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#clear-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f04e4e; /* Clean, modern red */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Slightly rounded corners for that modern touch */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Space if you want to add an icon later */
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* Hover effect for a subtle lift */
+#clear-btn:hover {
+  background-color: #d84343;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Active state for click feedback */
+#clear-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional focus outline for accessibility */
+#clear-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(240, 78, 78, 0.5);
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto; /* Scrollbar only when needed */
+  scrollbar-width: none; /* Hide scrollbar by default (Firefox) */
+}
+
+ul::-webkit-scrollbar {
+  display: none; /* Hide scrollbar by default (Chrome/Safari) */
+}
+
+ul:overflowing {
+  scrollbar-width: thin; /* Show scrollbar when overflowing (Firefox) */
+}
+
+ul:overflowing::-webkit-scrollbar {
+  display: block; /* Show scrollbar when overflowing (Chrome/Safari) */
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background: #2a2a2a;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background 0.2s ease, opacity 0.3s ease;
+}
+
+li:hover {
+  background: #333; /* Subtle hover effect */
+}
+
+li.fade-out {
+  opacity: 0;
+}
+
+li .gleaning-text {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-bottom: 5px;
+  word-break: break-word;
+}
+
+li .gleaning-meta {
+  font-size: 12px;
+  color: #888;
+}
+
+li .gleaning-meta a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+li .gleaning-meta a:hover {
+  text-decoration: underline;
+}
+
+li button {
+  background-color: #f04e4e; /* Same modern red */
+  color: white;
+  padding: 8px 16px; /* Better touch target */
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px; /* Same rounded corners for consistency */
+  cursor: pointer;
+  margin-top: 8px;
+  margin-left: 8px; /* Adds space between text and button */
+  align-self: flex-end;
+  transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* Hover effect */
+li button:hover {
+  background-color: #d84343;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Active (clicked) effect */
+li button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional focus outline for accessibility */
+li button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(240, 78, 78, 0.5);
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 12px;
+  color: #888;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
