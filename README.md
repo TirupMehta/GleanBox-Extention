@@ -12,13 +12,13 @@ Inspired by the word **"glean"** — gathering valuable information bit by bit �
 
 ## Features
 
-- 🖱️ **Right-click "Glean" to capture highlighted text + source URL.**  
-- 🔎 **Retrieve highlights instantly via `g [keyword]` in the address bar.**  
-- 🗂️ **Multi-keyword search for precise filtering.**  
-- 🔄 **Sort by date or title.**  
-- 📂 **Cross-device sync with Chrome storage.**  
-- 🌙 **Sleek dark-themed UI with smooth animations.**  
-- ⚡ **Lightweight and built for speed.**
+-  **Right-click "Glean" to capture highlighted text + source URL.**  
+-  **Retrieve highlights instantly via `g [keyword]` in the address bar.**  
+-  **Multi-keyword search for precise filtering.**  
+-  **Sort by date or title.**  
+-  **Cross-device sync with Chrome storage.**  
+-  **Sleek dark-themed UI with smooth animations.**  
+-  **Lightweight and built for speed.**
 
 ---
 
@@ -44,7 +44,7 @@ Inspired by the word **"glean"** — gathering valuable information bit by bit �
 ## Developer
 
 **Created by:** Tirup Mehta  
-[**GitHub:**](https://github.com/TirupMehta)
+**GitHub:** https://github.com/TirupMehta
 
 ---
 
